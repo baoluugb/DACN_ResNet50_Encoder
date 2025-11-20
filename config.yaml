@@ -1,0 +1,60 @@
+# ===================== Data =====================
+dataset: CROHME
+use_aug: false
+val_split: 0.1
+num_workers: 16
+max_image_size: 512 # Maximum image dimension (resizes if larger to prevent OOM)
+
+# ===================== Training =================
+batch: 8
+epochs: 1
+lr: 1.0e-3
+weight_decay: 0.02
+use_amp: true
+early_stopping: false
+early_stopping_patience: 10
+seed: 05032004
+grad_clip: 1.0
+label_smoothing: 0.1
+
+# LR schedule
+use_scheduler: true
+scheduler_type: cosine
+warmup_steps: 2000
+min_lr: 1.0e-3
+
+# ===================== Model Core =================
+d_model: 256
+num_heads: 4
+
+# ===================== Encoder =================
+# ResNet encoder configuration
+encoder_backbone: resnet50 # ResNet backbone: resnet34 or resnet50
+encoder_pos_max_h: 64 # Max height for 2D positional encoding
+encoder_pos_max_w: 256 # Max width for 2D positional encoding
+
+# ===================== Decoder =================
+# Simple transformer decoder with shared layers
+num_layers: 6 # Number of transformer decoder layers (shared by all tasks)
+ffn_dim: 1024
+dropout: 0.5
+max_len: 512
+num_soft_prompts: 8
+
+# ===================== Auxiliary Tasks =================
+# Enable/disable auxiliary heads
+enable_type_head: true
+enable_depth_head: true
+enable_rel_head: true
+
+# Auxiliary loss weights
+aux_type_loss_weight: 0.05
+aux_depth_loss_weight: 0.05
+aux_rel_loss_weight: 0.05
+coverage_loss_weight: 0.01
+
+# ===================== Inference =================
+beam_size: 5
+length_penalty: 1.0
+min_gen_len: 1
+temperature: 1.0
