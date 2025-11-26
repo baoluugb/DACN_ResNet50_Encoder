@@ -64,7 +64,8 @@ class HMERWithAuxiliary(nn.Module):
             d_model=self.d_model,
             backbone=encoder_backbone,
             pos_max_h=encoder_pos_max_h,
-            pos_max_w=encoder_pos_max_w
+            pos_max_w=encoder_pos_max_w,
+            pretrained=True
         )
 
         # LaTeX decoder with auxiliary heads

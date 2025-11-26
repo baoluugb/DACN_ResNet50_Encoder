@@ -1,14 +1,14 @@
 Set up:
+
 - conda create -n \<env name\> python=3.9 -y
 - conda activate \<env name\>
 - pip install torch==2.7.0 torchvision==0.22.0 --index-url https://download.pytorch.org/whl/cu118
 - pip install -r requirements.txt
 
-
 Download data from here: https://drive.google.com/file/d/1dMVwwQ9AvgM3QCmthkYJNjs6t3T5fZOk/view?usp=sharing
 
-
 Upzip it, the working dir will look like this:
+
 ```bash
 .
 ├── config.yaml

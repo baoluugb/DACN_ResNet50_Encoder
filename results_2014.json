@@ -1,9 +1,9 @@
 {
   "total_samples": 986,
-  "exact_match": 182,
-  "ExpRate": 0.1845841784989858,
-  "ExpRate_\u22641": 0.3509127789046653,
-  "ExpRate_\u22642": 0.4645030425963489,
-  "ExpRate_\u22643": 0.5517241379310345,
-  "average_edit_distance": 5.254563894523327
+  "exact_match": 0,
+  "ExpRate": 0.0,
+  "ExpRate_\u22641": 0.0,
+  "ExpRate_\u22642": 0.012170385395537525,
+  "ExpRate_\u22643": 0.032454361054766734,
+  "average_edit_distance": 34.15415821501014
 }

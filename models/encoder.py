@@ -131,7 +131,11 @@ class Encoder(nn.Module):
             resnet = resnet34(pretrained=pretrained)
             self.resnet_channels = 512  # ResNet34 outputs 512 channels from layer4
         elif backbone == 'resnet50':
-            resnet = resnet50(pretrained=pretrained)
+            # Use dilated convolutions in layer3 and layer4 to increase feature map resolution
+            # This changes output from 1/32 (16x16) to 1/8 (64x64) of input size
+            # Crucial for recognizing small mathematical symbols
+            resnet = resnet50(pretrained=pretrained,
+                              replace_stride_with_dilation=[False, True, True])
             self.resnet_channels = 2048  # ResNet50 outputs 2048 channels from layer4
         else:
             raise ValueError(f"Unknown backbone: {backbone}")

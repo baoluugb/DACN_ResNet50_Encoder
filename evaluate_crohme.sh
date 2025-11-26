@@ -10,7 +10,7 @@ export PYTHONPATH=$PYTHONPATH:.
 # --------------------------------------------------
 # Configuration
 # CHECKPOINT="${1:-checkpoints/CROHME_best.pt}"
-CHECKPOINT="${1:-checkpoints/CROHME_final.pt}"
+CHECKPOINT="${1:-checkpoints/CROHME_best.pt}"
 
 DATA_DIR="data/CROHME"
 DICT="${DATA_DIR}/dictionary.txt"
