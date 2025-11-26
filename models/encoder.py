@@ -112,8 +112,8 @@ class Encoder(nn.Module):
     - Feature projection to d_model dimension
     """
 
-    def __init__(self, d_model: int = 512, backbone: str = 'resnet34',
-                 pos_max_h: int = 64, pos_max_w: int = 256, pretrained: bool = False):
+    def __init__(self, d_model: int = 512, backbone: str = 'resnet50',
+                 pos_max_h: int = 64, pos_max_w: int = 256, pretrained: bool = True):
         """
         Args:
             d_model: Output feature dimension

@@ -149,7 +149,7 @@ class HMERWithAuxiliary(nn.Module):
         }
 
         total_loss, loss_dict = combine_losses(main_loss, aux_losses, weights)
-        return total_loss, loss_dict
+        return total_loss, loss_dict, logits
 
     @torch.no_grad()
     def generate(self, images: torch.Tensor, max_len: int = 200, beam_size: int = 1,

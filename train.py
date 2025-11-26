@@ -131,7 +131,7 @@ def train_epoch(
         if use_amp:
 
             with autocast(device_type='cuda'):
-                loss, loss_dict = model.compute_loss(
+                loss, loss_dict, logits = model.compute_loss(
                     batch_dict,
                     aux_targets,
                     label_smoothing=cfg.get('label_smoothing', 0.1)
@@ -149,7 +149,7 @@ def train_epoch(
             scaler.step(optimizer)
             scaler.update()
         else:
-            loss, loss_dict = model.compute_loss(
+            loss, loss_dict, logits = model.compute_loss(
                 batch_dict,
                 aux_targets,
                 label_smoothing=cfg.get('label_smoothing', 0.1)
@@ -176,12 +176,9 @@ def train_epoch(
         total_coverage_loss += loss_dict.get('coverage', 0)
 
         # Compute accuracy (on main task)
-        with torch.no_grad():
-            outputs = model(images, target_ids)
-            logits = outputs["logits"]
-            main_targets = target_ids[:, 1:]
-            acc = compute_accuracy(logits, main_targets, model.pad_id)
-            total_accuracy += acc
+        acc = compute_accuracy(
+            logits.detach(), target_ids[:, 1:], model.pad_id)
+        total_accuracy += acc
 
         num_batches += 1
 
@@ -266,7 +263,7 @@ def validate(
         }
 
         # Compute loss
-        loss, loss_dict = model.compute_loss(
+        loss, loss_dict, logits = model.compute_loss(
             batch_dict,
             aux_targets,
             label_smoothing=0.0  # No smoothing for validation
@@ -276,10 +273,8 @@ def validate(
         total_main_loss += loss_dict.get('main', 0)
 
         # Compute accuracy
-        outputs = model(images, target_ids)
-        logits = outputs["logits"]
-        main_targets = target_ids[:, 1:]
-        acc = compute_accuracy(logits, main_targets, model.pad_id)
+        acc = compute_accuracy(
+            logits.detach(), target_ids[:, 1:], model.pad_id)
         total_accuracy += acc
 
         num_batches += 1
