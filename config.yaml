@@ -6,7 +6,7 @@ num_workers: 16
 max_image_size: 512 # Maximum image dimension (resizes if larger to prevent OOM)
 
 # ===================== Training =================
-batch: 4
+batch: 8
 epochs: 1
 lr: 1.0e-3
 weight_decay: 0.02

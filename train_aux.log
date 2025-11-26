@@ -258,6 +258,7 @@
 [INFO] Epoch 100 - Val Loss: 0.4297 (main: 0.4163) - Acc: 0.9283
 [INFO] Training completed!
 [INFO] Best validation loss: 0.3948
+<<<<<<< HEAD
 [INFO] Device: cuda
 [INFO] Dataset: CROHME
 [INFO] Building vocabulary...
@@ -340,3 +341,5 @@
 [INFO] Using CosineAnnealing scheduler with 2000 warmup steps
 [INFO] Starting training from epoch 1 to 1...
 [INFO] Early stopping: Disabled
+=======
+>>>>>>> 7028a6c45587f803055d6f4e5b4d78a80d45aefb
