@@ -10,12 +10,12 @@ export PYTHONPATH=$PYTHONPATH:.
 # --------------------------------------------------
 # Configuration
 # CHECKPOINT="${1:-checkpoints/CROHME_best.pt}"
-CHECKPOINT="${1:-checkpoints/CROHME_best.pt}"
+CHECKPOINT="${1:-checkpoints/CROHME_final.pt}"
 
 DATA_DIR="data/CROHME"
 DICT="${DATA_DIR}/dictionary.txt"
 BEAM_SIZE="${2:-5}"
-BATCH_SIZE="${3:-32}"
+BATCH_SIZE="${3:-16}"
 
 # Check if checkpoint exists
 if [ ! -f "$CHECKPOINT" ]; then

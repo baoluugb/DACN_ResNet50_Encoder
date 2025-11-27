@@ -8,9 +8,102 @@
 [INFO] Train samples: 7951, Val samples: 883
 [INFO] Building model...
 [INFO] Using CosineAnnealing scheduler with 2000 warmup steps
-[INFO] Starting training from epoch 1 to 1...
+[INFO] Starting training from epoch 1 to 40...
 [INFO] Early stopping: Disabled
-[INFO] Epoch 1 - Train Loss: nan (main: 3.4491) - Acc: 0.2481
-[INFO] Epoch 1 - Val Loss: nan (main: 2.8524) - Acc: 0.3213
+[INFO] Epoch 1 - Train Loss: nan (main: 3.4646) - Acc: 0.2440
+[INFO] Epoch 1 - Val Loss: nan (main: 2.7929) - Acc: 0.3178
+[INFO] Epoch 2 - Train Loss: nan (main: 2.9940) - Acc: 0.3622
+[INFO] Epoch 2 - Val Loss: nan (main: 2.2759) - Acc: 0.4191
+[INFO] Epoch 3 - Train Loss: nan (main: 2.7843) - Acc: 0.4139
+[INFO] Epoch 3 - Val Loss: nan (main: 2.0898) - Acc: 0.4718
+[INFO] Epoch 4 - Train Loss: nan (main: 2.5930) - Acc: 0.4647
+[INFO] Epoch 4 - Val Loss: nan (main: 1.8237) - Acc: 0.5340
+[INFO] Epoch 5 - Train Loss: nan (main: 2.4608) - Acc: 0.4999
+[INFO] Epoch 5 - Val Loss: nan (main: 1.6732) - Acc: 0.5686
+[INFO] Epoch 6 - Train Loss: nan (main: 2.3435) - Acc: 0.5345
+[INFO] Epoch 6 - Val Loss: nan (main: 1.5784) - Acc: 0.5957
+[INFO] Epoch 7 - Train Loss: nan (main: 2.2241) - Acc: 0.5695
+[INFO] Epoch 7 - Val Loss: nan (main: 1.3747) - Acc: 0.6467
+[INFO] Epoch 8 - Train Loss: nan (main: 2.1124) - Acc: 0.6037
+[INFO] Epoch 8 - Val Loss: nan (main: 1.3093) - Acc: 0.6660
+[INFO] Epoch 9 - Train Loss: nan (main: 1.9950) - Acc: 0.6406
+[INFO] Epoch 9 - Val Loss: nan (main: 1.1119) - Acc: 0.7167
+[INFO] Epoch 10 - Train Loss: nan (main: 1.8741) - Acc: 0.6793
+[INFO] Epoch 10 - Val Loss: nan (main: 0.9697) - Acc: 0.7536
+[INFO] Epoch 11 - Train Loss: nan (main: 1.7481) - Acc: 0.7178
+[INFO] Epoch 11 - Val Loss: nan (main: 0.8919) - Acc: 0.7701
+[INFO] Epoch 12 - Train Loss: nan (main: 1.6447) - Acc: 0.7500
+[INFO] Epoch 12 - Val Loss: nan (main: 0.7396) - Acc: 0.8149
+[INFO] Epoch 13 - Train Loss: nan (main: 1.5473) - Acc: 0.7817
+[INFO] Epoch 13 - Val Loss: nan (main: 0.7014) - Acc: 0.8226
+[INFO] Epoch 14 - Train Loss: nan (main: 1.4699) - Acc: 0.8067
+[INFO] Epoch 14 - Val Loss: nan (main: 0.6114) - Acc: 0.8526
+[INFO] Epoch 15 - Train Loss: nan (main: 1.4112) - Acc: 0.8246
+[INFO] Epoch 15 - Val Loss: nan (main: 0.5422) - Acc: 0.8683
+[INFO] Epoch 16 - Train Loss: nan (main: 1.3512) - Acc: 0.8445
+[INFO] Epoch 16 - Val Loss: nan (main: 0.5249) - Acc: 0.8720
+[INFO] Epoch 17 - Train Loss: nan (main: 1.2998) - Acc: 0.8597
+[INFO] Epoch 17 - Val Loss: nan (main: 0.5111) - Acc: 0.8787
+[INFO] Epoch 18 - Train Loss: nan (main: 1.2563) - Acc: 0.8731
+[INFO] Epoch 18 - Val Loss: nan (main: 0.4567) - Acc: 0.8969
+[INFO] Epoch 19 - Train Loss: nan (main: 1.2195) - Acc: 0.8845
+[INFO] Epoch 19 - Val Loss: nan (main: 0.4499) - Acc: 0.8992
+[INFO] Epoch 20 - Train Loss: nan (main: 1.1825) - Acc: 0.8957
+[INFO] Epoch 20 - Val Loss: nan (main: 0.4052) - Acc: 0.9078
+[INFO] Epoch 21 - Train Loss: nan (main: 1.1519) - Acc: 0.9051
+[INFO] Epoch 21 - Val Loss: nan (main: 0.3842) - Acc: 0.9164
+[INFO] Epoch 22 - Train Loss: nan (main: 1.1231) - Acc: 0.9130
+[INFO] Epoch 22 - Val Loss: nan (main: 0.3658) - Acc: 0.9216
+[INFO] Epoch 23 - Train Loss: nan (main: 1.0925) - Acc: 0.9223
+[INFO] Epoch 23 - Val Loss: nan (main: 0.3623) - Acc: 0.9238
+[INFO] Epoch 24 - Train Loss: nan (main: 1.0711) - Acc: 0.9295
+[INFO] Epoch 24 - Val Loss: nan (main: 0.3339) - Acc: 0.9314
+[INFO] Epoch 25 - Train Loss: nan (main: 1.0469) - Acc: 0.9369
+[INFO] Epoch 25 - Val Loss: nan (main: 0.3639) - Acc: 0.9248
+[INFO] Epoch 26 - Train Loss: nan (main: 1.0251) - Acc: 0.9429
+[INFO] Epoch 26 - Val Loss: nan (main: 0.3378) - Acc: 0.9378
+[INFO] Epoch 27 - Train Loss: nan (main: 1.0108) - Acc: 0.9472
+[INFO] Epoch 27 - Val Loss: nan (main: 0.3327) - Acc: 0.9392
+[INFO] Epoch 28 - Train Loss: nan (main: 0.9920) - Acc: 0.9532
+[INFO] Epoch 28 - Val Loss: nan (main: 0.3327) - Acc: 0.9369
+[INFO] Epoch 29 - Train Loss: nan (main: 0.9791) - Acc: 0.9564
+[INFO] Epoch 29 - Val Loss: nan (main: 0.3100) - Acc: 0.9424
+[INFO] Epoch 30 - Train Loss: nan (main: 0.9651) - Acc: 0.9608
+[INFO] Epoch 30 - Val Loss: nan (main: 0.3320) - Acc: 0.9372
+[INFO] Epoch 31 - Train Loss: nan (main: 0.9530) - Acc: 0.9648
+[INFO] Epoch 31 - Val Loss: nan (main: 0.3123) - Acc: 0.9426
+[INFO] Epoch 32 - Train Loss: nan (main: 0.9409) - Acc: 0.9679
+[INFO] Epoch 32 - Val Loss: nan (main: 0.3197) - Acc: 0.9409
+[INFO] Epoch 33 - Train Loss: nan (main: 0.9347) - Acc: 0.9698
+[INFO] Epoch 33 - Val Loss: nan (main: 0.3107) - Acc: 0.9436
+[INFO] Epoch 34 - Train Loss: nan (main: 0.9277) - Acc: 0.9723
+[INFO] Epoch 34 - Val Loss: nan (main: 0.3095) - Acc: 0.9466
+[INFO] Epoch 35 - Train Loss: nan (main: 0.9209) - Acc: 0.9746
+[INFO] Epoch 35 - Val Loss: nan (main: 0.3039) - Acc: 0.9495
+[INFO] Epoch 36 - Train Loss: nan (main: 0.9171) - Acc: 0.9758
+[INFO] Epoch 36 - Val Loss: nan (main: 0.3009) - Acc: 0.9480
+[INFO] Epoch 37 - Train Loss: nan (main: 0.9129) - Acc: 0.9764
+[INFO] Epoch 37 - Val Loss: nan (main: 0.3025) - Acc: 0.9495
+[INFO] Epoch 38 - Train Loss: nan (main: 0.9116) - Acc: 0.9768
+[INFO] Epoch 38 - Val Loss: nan (main: 0.3030) - Acc: 0.9481
+[INFO] Epoch 39 - Train Loss: nan (main: 0.9104) - Acc: 0.9773
+[INFO] Epoch 39 - Val Loss: nan (main: 0.3002) - Acc: 0.9485
+[INFO] Epoch 40 - Train Loss: nan (main: 0.9087) - Acc: 0.9784
+[INFO] Epoch 40 - Val Loss: nan (main: 0.3065) - Acc: 0.9485
 [INFO] Training completed!
 [INFO] Best validation loss: inf
+[INFO] Device: cuda
+[INFO] Dataset: CROHME
+[INFO] Building vocabulary...
+[INFO] Vocabulary size: 114
+[INFO] Special tokens - PAD: 0, BOS: 1, EOS: 2
+[INFO] Loading dataset...
+[INFO] Max image size: 512
+[INFO] Train samples: 7951, Val samples: 883
+[INFO] Building model...
+[INFO] Using CosineAnnealing scheduler with 2000 warmup steps
+[INFO] Resuming from checkpoint: ./checkpoints/CROHME_final.pt
+[INFO] Resumed from epoch 40
+[INFO] Best validation loss so far: nan
+[INFO] Starting training from epoch 41 to 1...
+[INFO] Early stopping: Disabled
