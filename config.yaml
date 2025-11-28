@@ -7,9 +7,9 @@ max_image_size: 512 # Maximum image dimension (resizes if larger to prevent OOM)
 
 # ===================== Training =================
 batch: 4
-epochs: 40
+epochs: 100
 lr: 5.0e-4
-weight_decay: 0.02
+weight_decay: 0.05
 use_amp: true
 early_stopping: false
 early_stopping_patience: 10
