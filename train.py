@@ -388,7 +388,8 @@ def main():
         shuffle=True,
         collate_fn=lambda b: collate_fn(b, pad_id),
         num_workers=cfg.get('num_workers', 4),
-        drop_last=False
+        drop_last=False,
+        pin_memory=True
     )
 
     val_loader = DataLoader(
@@ -396,7 +397,8 @@ def main():
         batch_size=cfg.get('batch', 16),
         shuffle=False,
         collate_fn=lambda b: collate_fn(b, pad_id),
-        num_workers=cfg.get('num_workers', 4)
+        num_workers=cfg.get('num_workers', 4),
+        pin_memory=True
     )
 
     # Create model
